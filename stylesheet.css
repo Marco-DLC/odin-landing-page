@@ -1,50 +1,225 @@
 body {
-    font-family:"Roboto", Helvetica, sans-serif; 
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", Helvetica, sans-serif;
+    margin: 0;
+    justify-content:space-between;
 }
- 
- /*Colors and Font Styles*/
- .header,
- .card-01,
- .footer {
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left {
+    gap: 16px;
+}
+
+.logo {
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.header img {
+    width: 100px;
+    margin: -22px -25px;
+}
+
+.content {
+    display: flex;
+    margin: auto;
+    width:900px;
+}
+
+.header .content,
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header,
+.card-01,
+.card-02,
+.card-03,
+.card-04,
+.footer {
+    display: flex;
+    padding: 0px 16px;
+}
+
+.card-01 .content {
+    justify-content: space-between;
+    gap: 36px;
+    padding:64px 0px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    gap: 16px;
+}
+
+button {
+    border-radius: 5px;
+    padding: 8px 26px;
+    border-style: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card-01 img {
+    width: 400px;
+    padding: 52px 0px;
+}
+
+.card-02 .content {
+    flex-direction:column;
+    text-align:center;
+    padding:32px;
+    gap:32px;
+    margin-bottom:100px;
+}
+
+.cards {
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.card {
+    display:flex;
+    flex-direction:column;
+    width:160px;
+    text-align:center;
+    gap:8px;
+}
+
+.card img {
+    border-radius:10px;
+    border:#d6c771 3px solid;
+    
+}
+
+.card-03 .content {
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:150px 0px 125px;
+}
+
+.thor {
+    display:flex;
+    align-self:flex-end;
+    gap:16px;
+    font-weight:bold;
+    font-size:26px;
+}
+
+.thor .logo {
+    width:75px;
+    height:75px;
+    border:3px solid #d6c771;
+}
+.thor img {
+    width:100px;
+    margin: -10px -13px;
+}
+
+.card-04 .content {
+    display:flex;
+    justify-content:center;
+    padding:84px 0px;
+}
+
+.pop-up {
+    display:flex;
+    flex:1;
+    border-radius: 10px;
+    padding:44px 72px;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.pop-up .text {
+    display:flex;
+    flex-direction:column;
+}
+
+.call {
+    font-weight:bold;
+    font-size:22px;
+}
+
+.pop-up button {
+    border:2px solid white;
+}
+
+.footer .content {
+    justify-content:center;
+    padding:32px;
+}
+
+/*Colors and Font Styles*/
+.header,
+.card-01,
+.footer {
     background-color: #1F2937;
- }
- 
- .hero-text h1 {
-    font-size:48px;
-    font-weight:bolder;
-    color:#F9FAF8;
- }
+}
 
- a,
- .hero-text p {
-    font-size:18px;
-    color:#E5E7EB;
- }
+.hero-text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
 
-.header {
-    font-size:24px;
-    color:#F9FAF8;
+a,
+.hero .text,
+.footer {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header .left {
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 button,
 .pop-up {
-    background-color:#3882F6;
-    color:white;
+    background-color: #3882F6;
+    color: white;
 }
 
-h2 {
-    font-size:36px;
-    font-weight:bolder;
-    color:#1F2937;
+.info {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
 }
 
 .card-03 {
-    background-color:#E5E7EB;
+    background-color: #E5E7EB;
 }
 
+.card .text {
+    font-size:14px;
+    color:#1F2937
+}
 .quote {
-    font-size:36px;
-    font-weight:lighter;
-    font-style:italic;
-    color:#1F2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
 }
