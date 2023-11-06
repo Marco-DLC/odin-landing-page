@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+a:Hover {
+    text-decoration: underline;
+}
+
 .left {
     gap: 16px;
 }
@@ -78,6 +82,16 @@ button {
     border-style: none;
     font-weight: bold;
     font-size: 16px;
+}
+
+button:hover,
+.logo:hover,
+.header .left:hover {
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 0px 0px 4px 4px inset rgba(0, 204, 255, 0.212);
 }
 
 .card-01 img {
